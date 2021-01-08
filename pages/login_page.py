@@ -11,7 +11,7 @@ class LoginPage(BasePage):
 
     def should_be_login_url(self):
         cur_url = self.browser.current_url
-        assert cur_url.find("login") >= 0, "Login URL is not containt 'login' word"
+        assert cur_url.find("login") >= 0, "Login URL is not containts 'login' word"
 
     def should_be_login_form(self):
         assert self.is_element_present(*LoginPageLocators.LOGIN_FORM), "Login form is not presented"
