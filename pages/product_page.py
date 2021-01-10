@@ -35,3 +35,4 @@ class ProductPage(BasePage):
     def should_be_dissappeared_success_message(self):
         assert self.is_disappeared(*ProductPageLocators.ALERT_SUCCESS_MESSAGES), \
             "Success message is not dissappeared, but should not be"
+
